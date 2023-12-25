@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#christmas-tree-container {
+    position: relative;
+    transform: scale(1.2);
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+
+#message-container {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#message-input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#messages {
+    position: absolute;
+    right: 0; /* 位于页面右侧 */
+    top: 50%; /* 垂直居中 */
+    transform: translateY(-50%);
+    white-space: nowrap;
+}
+/* 雪花样式 
+.snowflake {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.7); 
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    animation: snowfall 5s linear infinite, spin 10s linear infinite;
+}*/
+
+/* 星星样式 */
+.star {
+    position: absolute;
+    background: #f9ff62; /* 明亮的黄色 */
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    animation: twinkle 2s alternate linear infinite, spin 5s linear infinite;
+}
